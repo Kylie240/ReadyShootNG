@@ -14,11 +14,13 @@ import { LoginComponent } from './pages/login/login.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { ProductComponent } from './pages/product/product.component';
+import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
+import { EasyBannerComponent } from './components/easy-banner/easy-banner.component';
 
 import { ButtonModule } from 'primeng/button';
 import {CardModule} from 'primeng/card';
-import { EasyBannerComponent } from './components/easy-banner/easy-banner.component';
-import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
+import { InputTextModule } from 'primeng/inputtext';
+
 
 @NgModule({
   declarations: [
@@ -41,6 +43,7 @@ import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.componen
     CardModule,
     ButtonModule,
     BrowserModule,
+    InputTextModule,
     AppRoutingModule
   ],
   providers: [],
