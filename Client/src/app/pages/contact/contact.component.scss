@@ -87,7 +87,6 @@
 }
 @media (max-width: 768px) {
   .contact-container {
-    background: red;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 0;
     max-width: 500px;

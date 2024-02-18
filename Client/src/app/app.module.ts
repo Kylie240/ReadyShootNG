@@ -20,6 +20,7 @@ import { EasyBannerComponent } from './components/easy-banner/easy-banner.compon
 import { ButtonModule } from 'primeng/button';
 import {CardModule} from 'primeng/card';
 import { InputTextModule } from 'primeng/inputtext';
+import { BookingBannerComponent } from './components/booking-banner/booking-banner.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { InputTextModule } from 'primeng/inputtext';
     ProductComponent,
     EasyBannerComponent,
     BreadcrumbComponent,
+    BookingBannerComponent,
   ],
   imports: [
     CardModule,
