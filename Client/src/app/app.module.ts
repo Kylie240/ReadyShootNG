@@ -15,6 +15,11 @@ import { ProductsComponent } from './pages/products/products.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { ProductComponent } from './pages/product/product.component';
 
+import { ButtonModule } from 'primeng/button';
+import {CardModule} from 'primeng/card';
+import { EasyBannerComponent } from './components/easy-banner/easy-banner.component';
+import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,13 +33,18 @@ import { ProductComponent } from './pages/product/product.component';
     LoginComponent,
     ProductsComponent,
     RegisterComponent,
-    ProductComponent
+    ProductComponent,
+    EasyBannerComponent,
+    BreadcrumbComponent,
   ],
   imports: [
+    CardModule,
+    ButtonModule,
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+}

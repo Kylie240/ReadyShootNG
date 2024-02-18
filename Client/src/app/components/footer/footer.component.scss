@@ -1,0 +1,12 @@
+.footer {
+  padding: 0 4px;
+  display: flex;
+
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    justify-content: start;
+    align-items: start;
+  }
+}
