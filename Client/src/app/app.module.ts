@@ -24,6 +24,7 @@ import { BookingBannerComponent } from './components/booking-banner/booking-bann
 import { SaveBannerComponent } from './components/save-banner/save-banner.component';
 import { FaqComponent } from './components/faq/faq.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
+import { BrandBannerComponent } from './components/brand-banner/brand-banner.component';
 
 
 @NgModule({
@@ -46,6 +47,7 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
     SaveBannerComponent,
     FaqComponent,
     TestimonialsComponent,
+    BrandBannerComponent,
   ],
   imports: [
     CardModule,
