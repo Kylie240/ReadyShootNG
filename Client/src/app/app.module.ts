@@ -21,6 +21,9 @@ import { ButtonModule } from 'primeng/button';
 import {CardModule} from 'primeng/card';
 import { InputTextModule } from 'primeng/inputtext';
 import { BookingBannerComponent } from './components/booking-banner/booking-banner.component';
+import { SaveBannerComponent } from './components/save-banner/save-banner.component';
+import { FaqComponent } from './components/faq/faq.component';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 
 
 @NgModule({
@@ -40,6 +43,9 @@ import { BookingBannerComponent } from './components/booking-banner/booking-bann
     EasyBannerComponent,
     BreadcrumbComponent,
     BookingBannerComponent,
+    SaveBannerComponent,
+    FaqComponent,
+    TestimonialsComponent,
   ],
   imports: [
     CardModule,
