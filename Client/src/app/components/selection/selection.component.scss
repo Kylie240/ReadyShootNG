@@ -4,5 +4,9 @@
 .selection-content{
     display: flex;
     justify-content: space-around;
+
+    .selection-content-right{
+        display: flex;
+    }
 }
 }

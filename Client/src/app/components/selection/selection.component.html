@@ -9,38 +9,40 @@
             <div class="selection-content-buttons">
                 <p-button *ngFor="let camera of cameras" label={{camera.name}} [style]="{width: '160px'}"></p-button>
             </div>
-            <div class="selection-content-img">
+            <div class="selection-content-right">
 
+                <div class="selection-content-img">
+                    <img src={{selectedCamera.img}} alt="">
+                </div>
+                <div class="selection-content-table">
+                    
+                    <p-table styleClass="p-datatable-gridlines" [tableStyle]="{'min-width': '50rem'}">
+                        <ng-template pTemplate="caption">
+                            {{selectedCamera.name}}
+                        </ng-template>
+                        <ng-template pTemplate="header">
+                            <tr>
+                                <th>{{selectedCamera.price}}</th>
+                                <th>{{selectedCamera.name}}</th>
+                            </tr>
+                        </ng-template>
+                        <ng-template pTemplate="body">
+                            <tr>
+                                <td>{{selectedCamera.sensor}}</td>
+                                <td>{{selectedCamera.lens}}</td>
+                                <td>{{selectedCamera.files}}</td>
+                                <td>{{selectedCamera.video}}</td>
+                                <td>{{selectedCamera.ios}}</td>
+                                <td>{{selectedCamera.shoot}}</td>
+                                <td>{{selectedCamera.weight}}</td>
+                                <td>{{selectedCamera.dimensions}}</td>
+                            </tr>
+                        </ng-template>
+                        <ng-template pTemplate="summary">
+                            Footer
+                        </ng-template>
+                    </p-table>
             </div>
-            <div class="selection-content-table">
-                
-                <p-table value={{cameras}} styleClass="p-datatable-gridlines" [tableStyle]="{'min-width': '50rem'}">
-                    <ng-template pTemplate="caption">
-                        {{name}}
-                    </ng-template>
-                    <ng-template pTemplate="header">
-                        <tr>
-                            <th>{{price}}</th>
-                            <th>{{name}}</th>
-                        </tr>
-                    </ng-template>
-                    <ng-template pTemplate="body" let-product>
-                        <tr>
-                            <td>{{sensor}}</td>
-                            <td>{{lens}}</td>
-                            <td>{{files}}</td>
-                            <td>{{video}}</td>
-                            <td>{{ios}}</td>
-                            <td>{{shoot}}</td>
-                            <td>{{weight}}</td>
-                            <td>{{dimensions}}</td>
-                        </tr>
-                    </ng-template>
-                    <ng-template pTemplate="summary">
-                        Footer
-                    </ng-template>
-                </p-table>
-
             </div>
         </div>
     </div>

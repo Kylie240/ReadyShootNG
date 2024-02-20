@@ -29,6 +29,7 @@ import {AccordionModule} from 'primeng/accordion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SelectionComponent } from './components/selection/selection.component';
 import {ListboxModule} from 'primeng/listbox';
+import {TableModule} from 'primeng/table';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import {ListboxModule} from 'primeng/listbox';
   imports: [
     CardModule,
     ButtonModule,
+    TableModule,
     BrowserModule,
     InputTextModule,
     AppRoutingModule,

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Camera } from 'src/app/camera';
 import { CAMERAS } from 'src/app/camera-data';
 
 @Component({
@@ -8,7 +9,8 @@ import { CAMERAS } from 'src/app/camera-data';
 })
 export class SelectionComponent implements OnInit {
 
-  cameras = CAMERAS;
+  cameras: Camera[] = CAMERAS;
+  selectedCamera: Camera = this.cameras[0];
 
   constructor() { }
 
