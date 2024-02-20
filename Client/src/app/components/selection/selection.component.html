@@ -1,23 +1,47 @@
 <div class="container">
-    <div class="faq-container">
-        <div class="faq-header">
-            <h6>FAQ</h6>
-            <h3>Frequently Asked Questions</h3>
-            <p>Answers to common concerns and inquiries Frequently asked questions about the camera rental booking process</p>
+    <div class="selection-container">
+        <div class="selection-header">
+            <h6>Browse Our Selection of</h6>
+            <h3>Quality Rental Cameras</h3>
+            <p>Choose from a variety of our amazing cameras to rent for your next photoshoot or video gig</p>
         </div>
-        <p-accordion>
-            <p-accordionTab header="What if I damage a device or cause signs of use?">
-                If accidental damage happens during your rental, Grover covers 90% of the repair costs for damages of all kinds, including display breakage, water damage, technical defects, or severe signs of use. If the product can't be repaired, Grover covers 90% of the product's retail price at the time of order placement.
-            </p-accordionTab>
-            <p-accordionTab header="How can I cancel my rental?">
-                To end your rental, simply return your product. The rental contract is cancelled once the product has been received and successfully processed.
-            </p-accordionTab>
-            <p-accordionTab header="How can I cancel my rental?">
-                You can choose between PayPal or Credit Card to pay for your rentals. You are charged once your inquiry is approved.    
-            </p-accordionTab>
-            <p-accordionTab header="Should I place my order far in advance of when I need it?">
-                We strongly suggest placing your order early to ensure the gear is available when you need it.   
-            </p-accordionTab>
-        </p-accordion>
+        <div class="selection-content">
+            <div class="selection-content-buttons">
+                <p-button *ngFor="let camera of cameras" label={{camera.name}} [style]="{width: '160px'}"></p-button>
+            </div>
+            <div class="selection-content-img">
+
+            </div>
+            <div class="selection-content-table">
+                
+                <p-table value={{cameras}} styleClass="p-datatable-gridlines" [tableStyle]="{'min-width': '50rem'}">
+                    <ng-template pTemplate="caption">
+                        {{name}}
+                    </ng-template>
+                    <ng-template pTemplate="header">
+                        <tr>
+                            <th>{{price}}</th>
+                            <th>{{name}}</th>
+                        </tr>
+                    </ng-template>
+                    <ng-template pTemplate="body" let-product>
+                        <tr>
+                            <td>{{sensor}}</td>
+                            <td>{{lens}}</td>
+                            <td>{{files}}</td>
+                            <td>{{video}}</td>
+                            <td>{{ios}}</td>
+                            <td>{{shoot}}</td>
+                            <td>{{weight}}</td>
+                            <td>{{dimensions}}</td>
+                        </tr>
+                    </ng-template>
+                    <ng-template pTemplate="summary">
+                        Footer
+                    </ng-template>
+                </p-table>
+
+            </div>
+        </div>
     </div>
 </div>
