@@ -27,6 +27,7 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
 import { BrandBannerComponent } from './components/brand-banner/brand-banner.component';
 import {AccordionModule} from 'primeng/accordion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SelectionComponent } from './components/selection/selection.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FaqComponent,
     TestimonialsComponent,
     BrandBannerComponent,
+    SelectionComponent,
   ],
   imports: [
     CardModule,
