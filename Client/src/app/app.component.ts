@@ -7,7 +7,7 @@ import {MenuItem} from 'primeng/api';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Client';
+  title = 'Ready Shoot';
   
   ngOnInit() {}
 }

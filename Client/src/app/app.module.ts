@@ -25,7 +25,8 @@ import { SaveBannerComponent } from './components/save-banner/save-banner.compon
 import { FaqComponent } from './components/faq/faq.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { BrandBannerComponent } from './components/brand-banner/brand-banner.component';
-
+import {AccordionModule} from 'primeng/accordion';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,9 @@ import { BrandBannerComponent } from './components/brand-banner/brand-banner.com
     ButtonModule,
     BrowserModule,
     InputTextModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AccordionModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

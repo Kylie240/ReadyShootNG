@@ -21,4 +21,4 @@ export const FAQS: Faq[] = [
         question: "Should I place my order far in advance of when I need it?",
         answer: "We strongly suggest placing your order early to ensure the gear is available when you need it.",
     }
-]
+];
