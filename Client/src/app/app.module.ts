@@ -28,6 +28,7 @@ import { BrandBannerComponent } from './components/brand-banner/brand-banner.com
 import {AccordionModule} from 'primeng/accordion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SelectionComponent } from './components/selection/selection.component';
+import {ListboxModule} from 'primeng/listbox';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { SelectionComponent } from './components/selection/selection.component';
     AppRoutingModule,
     AccordionModule,
     BrowserAnimationsModule,
+    ListboxModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

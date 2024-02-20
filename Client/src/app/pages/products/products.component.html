@@ -1,1 +1,20 @@
-<p>products works!</p>
+<app-breadcrumb></app-breadcrumb>
+<div class="container">
+    <div class="products-container">
+        <div class="filter-buttons">
+            <h4>Sort By Brand</h4>
+            <p-button *ngFor="let filter of filters" label={{filter}} ></p-button>
+        </div>
+        <div class="products-grid">
+            <p-card *ngFor="let camera of cameras" header={{camera.name}} subheader={{camera.brand}} [style]="{width: '360px'}" styleClass="p-card-shadow">
+                <ng-template pTemplate="header">
+                    <img alt={{camera.name}} src={{camera.img}}>
+                </ng-template>
+                <p>${{camera.price}} per day</p>
+                <ng-template pTemplate="footer">
+                    <p-button label="RENT NOW" icon="pi pi-check"></p-button>
+                </ng-template>
+            </p-card>
+        </div>
+    </div>
+</div>

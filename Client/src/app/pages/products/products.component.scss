@@ -1,0 +1,12 @@
+.products-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 3rem 0;
+
+  .filter-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
