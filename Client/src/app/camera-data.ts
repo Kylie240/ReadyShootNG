@@ -15,7 +15,7 @@ export const CAMERAS: Camera[] = [
         weight: 1.76,
         features: ["WiFi/Bluetooth","Built-In GPS","Weather Resistant"],
         price: 25,
-        img: "camera-images/LG3b758489-a1d9-4196-a161-b7dc026be0ff.jpg",
+        img: "assets/camera-images/LG3b758489-a1d9-4196-a161-b7dc026be0ff.jpg",
     },
     {
         id: 2,
@@ -31,7 +31,7 @@ export const CAMERAS: Camera[] = [
         weight: 1.45,
         features: ["Built-In WiFi/Bluetooth","Weather Sealed"],
         price: 21,
-        img: "camera-images/LGb9fab6f6-c015-494f-a4ad-1ac71fe9ac97.jpg",
+        img: "assets/camera-images/LGb9fab6f6-c015-494f-a4ad-1ac71fe9ac97.jpg",
     },
     {
         id: 3,
@@ -47,7 +47,7 @@ export const CAMERAS: Camera[] = [
         weight: 1.6,
         features: ["Unlimited Recording","5-Axis Image Stabilization","Internal Fan","Zoom Lever"],
         price: 34,
-        img: "camera-images/LGc69d9ba8-4be1-4924-97e3-e84bcac03888.jpg",
+        img: "assets/camera-images/LGc69d9ba8-4be1-4924-97e3-e84bcac03888.jpg",
     },
     {
         id: 4,
@@ -63,7 +63,7 @@ export const CAMERAS: Camera[] = [
         weight: 0.25,
         features: ["ActiveTrack 3.0","Hybrid AF 2.0","Passive Cooling System","180° Panorama Mode","AI Editor","Built-In Microphone","D-Cinelike Color Mode","Pass-Through Charging Support"],
         price: 6,
-        img: "camera-images/LG3dab62d9-642b-4dec-8819-abd1a005d457.jpg",
+        img: "assets/camera-images/LG3dab62d9-642b-4dec-8819-abd1a005d457.jpg",
     },
     {
         id: 5,
@@ -79,7 +79,7 @@ export const CAMERAS: Camera[] = [
         weight: 2.73,
         features: ["Bluetooth","Rolling Shutter","Pass-Through Charging Support"],
         price: 20,
-        img: "camera-images/bmccp6kefg2.jpg",
+        img: "assets/camera-images/bmccp6kefg2.jpg",
     },
     {
         id: 6,
@@ -95,7 +95,7 @@ export const CAMERAS: Camera[] = [
         weight: 3.11,
         features: ["Weather Sealed"],
         price: 44,
-        img: "camera-images/LG8b25421d-b744-4b69-b5aa-89b780942362.jpg",
+        img: "assets/camera-images/LG8b25421d-b744-4b69-b5aa-89b780942362.jpg",
     },
     {
         id: 7,
@@ -111,7 +111,7 @@ export const CAMERAS: Camera[] = [
         weight: 1.63,
         features: ["WiFi/Bluetooth","Weather Sealed"],
         price: 42,
-        img: "camera-images/LGfc72c1c8-1693-4831-94c5-592355721c75.jpg",
+        img: "assets/camera-images/LGfc72c1c8-1693-4831-94c5-592355721c75.jpg",
     },
     {
         id: 8,
@@ -127,6 +127,6 @@ export const CAMERAS: Camera[] = [
         weight: .67,
         features: ["WiFi/Bluetooth","Built-In GPS","Image Stabilization","4.2x Optical Zoom/4x Digital Zoom"],
         price: 8,
-        img: "camera-images/LG0a5d6022-224a-4196-967d-f8cf3603230b.jpg",
+        img: "assets/camera-images/LG0a5d6022-224a-4196-967d-f8cf3603230b.jpg",
     },
 ]
