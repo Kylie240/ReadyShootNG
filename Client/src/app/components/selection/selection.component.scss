@@ -48,7 +48,7 @@
       .selection-content-buttons {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         gap: 1rem;
         margin: 0 3rem 0 1rem;
       }
@@ -61,7 +61,12 @@
           max-width: 500px;
           display: flex;
           flex-direction: column;
-          justify-content: center;
+          justify-content: start;
+          align-items: center;
+          gap: 2rem;
+          h4 {
+            font-size: 3rem;
+          }
           img {
             width: 100%;
           }

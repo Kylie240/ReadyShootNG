@@ -17,4 +17,8 @@ export class SelectionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  handleSelect(camera: any){
+    this.selectedCamera = camera;
+  }
+
 }

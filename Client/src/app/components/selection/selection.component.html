@@ -7,20 +7,20 @@
         </div>
         <div class="selection-content">
             <div class="selection-content-buttons">
-                <p-button *ngFor="let camera of cameras" label={{camera.name}} [style]="{width: '220px'}"></p-button>
+                <p-button camera="camera" (onClick)="handleSelect(camera)" *ngFor="let camera of cameras" label='{{camera.brand}} {{camera.name}}' [style]="{width: '220px'}"></p-button>
             </div>
             <div class="selection-content-right">
 
                 <div class="selection-content-img">
+                    <h4>{{selectedCamera.name | uppercase}}</h4>
                     <img src={{selectedCamera.img}} alt="">
                 </div>
                 
                 <div class="selection-content-table">
-                    
                     <p-table [value]="[{selectedCamera}]" styleClass="p-datatable-gridlines" [tableStyle]="{'width': '300px'}">
-                        <ng-template pTemplate="caption">
+                        <!-- <ng-template pTemplate="caption">
                             {{selectedCamera.brand}} {{selectedCamera.name}}
-                        </ng-template>
+                        </ng-template> -->
                         <ng-template pTemplate="header">
                             <tr>
                                 <th colspan="2">{{selectedCamera.price}} per day</th>
