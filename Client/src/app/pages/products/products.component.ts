@@ -13,6 +13,8 @@ export class ProductsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  header: string = "Our Cameras";
+
   cameras = CAMERAS;
 
   filters = [

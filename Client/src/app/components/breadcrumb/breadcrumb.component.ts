@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-breadcrumb',
@@ -12,5 +12,5 @@ export class BreadcrumbComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  header = 'Windstorm';
+  @Input() header: string = '' as string;
 }
