@@ -7,7 +7,7 @@
         </div>
         <div class="selection-content">
             <div class="selection-content-buttons">
-                <p-button *ngFor="let camera of cameras" label={{camera.name}} [style]="{width: '160px'}"></p-button>
+                <p-button *ngFor="let camera of cameras" label={{camera.name}} [style]="{width: '220px'}"></p-button>
             </div>
             <div class="selection-content-right">
 
@@ -23,7 +23,7 @@
                         </ng-template>
                         <ng-template pTemplate="header">
                             <tr>
-                                <th style="display: flex; justify-content: center;" colspan="2">{{selectedCamera.price}} per day</th>
+                                <th colspan="2">{{selectedCamera.price}} per day</th>
                             </tr>
                         </ng-template>
                         <ng-template pTemplate="body">
