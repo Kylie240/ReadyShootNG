@@ -16,6 +16,7 @@ import { RegisterComponent } from './pages/register/register.component';
 import { ProductComponent } from './pages/product/product.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { EasyBannerComponent } from './components/easy-banner/easy-banner.component';
+import { HeroComponent } from './components/hero/hero.component';
 
 import { ButtonModule } from 'primeng/button';
 import {CardModule} from 'primeng/card';
@@ -30,6 +31,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SelectionComponent } from './components/selection/selection.component';
 import {ListboxModule} from 'primeng/listbox';
 import {TableModule} from 'primeng/table';
+import {CalendarModule} from 'primeng/calendar';
+import {DropdownModule} from 'primeng/dropdown';
 
 @NgModule({
   declarations: [
@@ -53,7 +56,7 @@ import {TableModule} from 'primeng/table';
     TestimonialsComponent,
     BrandBannerComponent,
     SelectionComponent,
-  
+    HeroComponent,
   ],
   imports: [
     CardModule,
@@ -65,6 +68,8 @@ import {TableModule} from 'primeng/table';
     AccordionModule,
     BrowserAnimationsModule,
     ListboxModule,
+    CalendarModule,
+    DropdownModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
