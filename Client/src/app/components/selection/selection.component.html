@@ -14,32 +14,47 @@
                 <div class="selection-content-img">
                     <img src={{selectedCamera.img}} alt="">
                 </div>
+                
                 <div class="selection-content-table">
                     
-                    <p-table styleClass="p-datatable-gridlines" [tableStyle]="{'min-width': '50rem'}">
+                    <p-table [value]="[{selectedCamera}]" styleClass="p-datatable-gridlines" [tableStyle]="{'width': '300px'}">
                         <ng-template pTemplate="caption">
-                            {{selectedCamera.name}}
+                            {{selectedCamera.brand}} {{selectedCamera.name}}
                         </ng-template>
                         <ng-template pTemplate="header">
                             <tr>
-                                <th>{{selectedCamera.price}}</th>
-                                <th>{{selectedCamera.name}}</th>
+                                <th style="display: flex; justify-content: center;" colspan="2">{{selectedCamera.price}} per day</th>
                             </tr>
                         </ng-template>
                         <ng-template pTemplate="body">
                             <tr>
-                                <td>{{selectedCamera.sensor}}</td>
+                                <td>Brand</td>
+                                <td>{{selectedCamera.brand}}</td>
+                            </tr>
+                            <tr>
+                                <td>Model</td>
+                                <td>{{selectedCamera.name}}</td>
+                            </tr>
+                            <tr>
+                                <td>Lens Compatability</td>
                                 <td>{{selectedCamera.lens}}</td>
+                            </tr>
+                            <tr>
+                                <td>File Size / Format</td>
                                 <td>{{selectedCamera.files}}</td>
+                            </tr>
+                            <tr>
+                                <td>Video Resolution</td>
                                 <td>{{selectedCamera.video}}</td>
-                                <td>{{selectedCamera.ios}}</td>
-                                <td>{{selectedCamera.shoot}}</td>
-                                <td>{{selectedCamera.weight}}</td>
+                            </tr>
+                            <tr>
+                                <td>Weight</td>
+                                <td>{{selectedCamera.weight}} lbs</td>
+                            </tr>
+                            <tr>
+                                <td>Dimensions</td>
                                 <td>{{selectedCamera.dimensions}}</td>
                             </tr>
-                        </ng-template>
-                        <ng-template pTemplate="summary">
-                            Footer
                         </ng-template>
                     </p-table>
             </div>
