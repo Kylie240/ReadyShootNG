@@ -10,6 +10,7 @@
         <div class="products-grid">
             <p-card *ngFor="let camera of cameras" header={{camera.name}} subheader={{camera.brand}} [style]="{width: '330px', padding: '1.5rem'}" styleClass="p-card-shadow">
                 <ng-template pTemplate="header">
+                    <i class="pi pi-bookmark" style="font-size: 1.5rem"></i>
                     <img alt={{camera.name}} src={{camera.img}}>
                 </ng-template>
                 <div>
