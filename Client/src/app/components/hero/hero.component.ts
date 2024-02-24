@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { City } from 'src/app/city';
+import { City } from 'src/app/models/city';
 
 @Component({
   selector: 'app-hero',

@@ -1,4 +1,4 @@
-import { Camera } from "./camera"
+import { Camera } from "./models/camera"
 
 export const CAMERAS: Camera[] = [
     {

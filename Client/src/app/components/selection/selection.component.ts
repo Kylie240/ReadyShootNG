@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Camera } from 'src/app/camera';
+import { Camera } from 'src/app/models/camera';
 import { CAMERAS } from 'src/app/camera-data';
 
 @Component({
