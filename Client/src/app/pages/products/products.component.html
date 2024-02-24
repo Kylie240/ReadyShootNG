@@ -8,13 +8,13 @@
             <p-button label="Saved" [style]="{width: '160px'}"></p-button>
         </div>
         <div class="products-grid">
-            <p-card *ngFor="let camera of cameras" header={{camera.name}} subheader={{camera.brand}} [style]="{width: '330px', padding: '1.5rem'}" styleClass="p-card-shadow">
+            <p-card *ngFor="let product of products" header={{product.name}} subheader={{product.brand}} [style]="{width: '330px', padding: '1.5rem'}" styleClass="p-card-shadow">
                 <ng-template pTemplate="header">
                     <i class="pi pi-bookmark" style="font-size: 1.5rem"></i>
-                    <img alt={{camera.name}} src={{camera.img}}>
+                    <img alt={{product.name}} src="src/assets/camera-images/{{product.image}}">
                 </ng-template>
                 <div>
-                    <p>${{camera.price}} per day</p>
+                    <p>${{product.price}} per day</p>
                     <p>per day</p>
                 </div>
                 <ng-template pTemplate="footer">

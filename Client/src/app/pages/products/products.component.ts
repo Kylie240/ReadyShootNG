@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CAMERAS } from 'src/app/camera-data';
+import { Product } from 'src/app/models/product';
+import { ProductsService } from './../../services/products.service';
 
 @Component({
   selector: 'app-products',
@@ -7,15 +9,9 @@ import { CAMERAS } from 'src/app/camera-data';
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-  header: string = "Our Cameras";
-
+  header = "Our Products";
   cameras = CAMERAS;
+  products: Product[] = [];
 
   filters = [
     "All",
@@ -26,5 +22,13 @@ export class ProductsComponent implements OnInit {
     "DJI",
     "Blackmagic",
   ]
+
+  constructor(private productsService: ProductsService) { }
+
+  ngOnInit(): void {
+    this.products = this.productsService.getAllCameras();
+    console.log(this.products);
+  }
+
 
 }
