@@ -5,7 +5,7 @@ import { Product } from '../models/product';
   providedIn: 'root'
 })
 export class ProductsService {
-
+  url = "Product";
   constructor() { }
 
   public getAllCameras() : Product[] {
