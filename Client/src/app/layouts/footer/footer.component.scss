@@ -32,9 +32,19 @@
 
     .logo {
       display: flex;
-      .name {
-        font-size: 30px;
+      position: relative;
+      align-items: center;
+      .logo-top {
+        font-size: 14px;
+        font-weight: 600;
+        p {
+          bottom: 0.5rem;
+          font-size: 10px;
+        }
+      }
+      h6 {
         font-weight: 800;
+        font-size: 40px;
       }
     }
 

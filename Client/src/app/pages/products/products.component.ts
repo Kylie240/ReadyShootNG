@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CAMERAS } from 'src/app/camera-data';
+import { Camera } from 'src/app/models/camera';
 import { Product } from 'src/app/models/product';
-import { ProductsService } from './../../services/products.service';
+import { ProductsService } from 'src/app/services/products.service';
 
 @Component({
   selector: 'app-products',
@@ -10,8 +11,8 @@ import { ProductsService } from './../../services/products.service';
 })
 export class ProductsComponent implements OnInit {
   header = "Our Products";
-  cameras = CAMERAS;
-  products: Product[] = [];
+  cameras : Camera[] = CAMERAS;
+  // products: Product[] = [];
 
   filters = [
     "All",
@@ -23,12 +24,19 @@ export class ProductsComponent implements OnInit {
     "Blackmagic",
   ]
 
-  constructor(private productsService: ProductsService) { }
+  constructor() {}
+  
+  ngOnInit() {
 
-  ngOnInit(): void {
-    this.products = this.productsService.getAllCameras();
-    console.log(this.products);
+    // this.productService.getAllProducts().subscribe(
+    //   (data : any) => {
+    //   console.log('Received data:', data)
+    //   this.cameras = data;
+    // },
+    // (error : any) => {
+    //   console.error('Error', error)
+    // }
+    // );
   }
-
 
 }

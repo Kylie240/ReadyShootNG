@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { City } from 'src/app/models/city';
+// import { City } from 'src/app/models/city';
 
 @Component({
   selector: 'app-hero',
@@ -9,8 +9,7 @@ import { City } from 'src/app/models/city';
 
 export class HeroComponent implements OnInit {
 
-  constructor() {
-  }
+  constructor() {  }
 
   ngOnInit(): void {
   }

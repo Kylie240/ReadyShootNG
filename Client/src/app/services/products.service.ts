@@ -1,11 +1,15 @@
 import { Injectable } from '@angular/core';
 import { Product } from '../models/product';
+import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { Product2 } from '../models/product2';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductsService {
-  url = "Product";
+  // url = 'http://localhost:3000';
+
   constructor() { }
 
   public getAllCameras() : Product[] {
@@ -49,4 +53,11 @@ export class ProductsService {
     }]
       return products;
   }
-}
+
+  // constructor(private http: HttpClient) { }
+
+  // public getAllProducts() : Observable<any> {
+  //   const url = `${this.url}/products`;
+  //   return this.http.get(url);
+  // }
+};

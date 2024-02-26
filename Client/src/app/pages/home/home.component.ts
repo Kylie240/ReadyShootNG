@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FaqComponent } from 'src/app/components/faq/faq.component';
 
 @Component({
   selector: 'app-home',

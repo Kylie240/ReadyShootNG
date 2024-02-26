@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './layouts/header/header.component';
 import { NavbarComponent } from './layouts/navbar/navbar.component';
 import { FooterComponent } from './layouts/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -33,11 +32,11 @@ import {ListboxModule} from 'primeng/listbox';
 import {TableModule} from 'primeng/table';
 import {CalendarModule} from 'primeng/calendar';
 import {DropdownModule} from 'primeng/dropdown';
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     NavbarComponent,
     FooterComponent,
     HomeComponent,
@@ -59,10 +58,11 @@ import {DropdownModule} from 'primeng/dropdown';
     HeroComponent,
   ],
   imports: [
-    CardModule,
+  CardModule,
     ButtonModule,
     TableModule,
     BrowserModule,
+    ButtonModule,
     InputTextModule,
     AppRoutingModule,
     AccordionModule,
@@ -70,6 +70,7 @@ import {DropdownModule} from 'primeng/dropdown';
     ListboxModule,
     CalendarModule,
     DropdownModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

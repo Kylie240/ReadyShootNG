@@ -1,7 +1,11 @@
 .hero-container {
   width: 100vw;
-  padding: 2.5rem 4rem 2.5rem 15rem;
   background-color: #ea580c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   .hero-content {
     display: flex;
     flex-direction: column;
