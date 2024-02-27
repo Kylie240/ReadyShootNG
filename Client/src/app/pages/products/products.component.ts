@@ -33,12 +33,10 @@ export class ProductsComponent implements OnInit {
       (data : Product2[]) => {
       console.log('Received data:', data)
       this.products = data;
-    },
-    (error) => {
-      console.error('Error', error)
-    }
+      },
+      (error) => {
+        console.error('Error', error)
+      }
     );
-
   }
-
 }
