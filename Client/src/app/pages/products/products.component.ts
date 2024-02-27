@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { CAMERAS } from 'src/app/camera-data';
 import { Camera } from 'src/app/models/camera';
 import { Product } from 'src/app/models/product';
-import { ProductsService } from 'src/app/services/products.service';
+import { Product2 } from 'src/app/models/product2';
+import { ApiService } from 'src/app/services/api.service';
 
 @Component({
   selector: 'app-products',
@@ -12,7 +13,7 @@ import { ProductsService } from 'src/app/services/products.service';
 export class ProductsComponent implements OnInit {
   header = "Our Products";
   cameras : Camera[] = CAMERAS;
-  // products: Product[] = [];
+  products: Product2[] = [];
 
   filters = [
     "All",
@@ -21,22 +22,23 @@ export class ProductsComponent implements OnInit {
     "Panasonic",
     "Nikon",
     "DJI",
-    "Blackmagic",
-  ]
+    "Blackmagic"
+  ];
 
-  constructor() {}
+  constructor(private apiService: ApiService) {}
   
   ngOnInit() {
 
-    // this.productService.getAllProducts().subscribe(
-    //   (data : any) => {
-    //   console.log('Received data:', data)
-    //   this.cameras = data;
-    // },
-    // (error : any) => {
-    //   console.error('Error', error)
-    // }
-    // );
+    this.apiService.getAllProducts().subscribe(
+      (data : Product2[]) => {
+      console.log('Received data:', data)
+      this.products = data;
+    },
+    (error) => {
+      console.error('Error', error)
+    }
+    );
+
   }
 
 }
